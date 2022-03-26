@@ -1,5 +1,5 @@
 
-![картинОчка](url)
+![картинОчка](https://github.com/618-egorka/qBook-site/blob/main/thumbnail.png?raw=true)
 
 # qBook 📚
 
