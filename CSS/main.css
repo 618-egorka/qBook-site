@@ -7,6 +7,39 @@ body{ /* Установка основного и запасных шрифто�
     min-width: 1440px;
 }
 
+h1{
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 36px;  
+    font-weight: 700;
+    color: #130130;
+}
+
+h2{
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 24px;  
+    font-weight: 700;
+    color: #130130;
+}
+
+h3{
+
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 400;
+    color: #4C4C4C;;
+}
+
+h4{
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 500;
+    color: #C0C0C9;;  
+}
+
 header{
     background-color: #fff;
     height: 76px;
@@ -31,7 +64,6 @@ header{
     height:40px;
     display: inline-flex;
     margin-top: 16px;
-
 }
 
 .nav{
@@ -73,6 +105,150 @@ input[type="field"]{
     font-size: 18px;
     color: #4C4C4C;
     color: #130130;
+}
+
+.daily-selections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.name-selections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+}
+
+.name-selections h1{
+    margin: 0px 12px;
+}
+
+.books-selections{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    margin: 22px;
+}
+
+.book-card{
+    width: 216px;
+    height: 478px;
+    background: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: none;
+
+    display: flex;
+    align-items: flex-start;
+    margin: 12px;
+    margin-top: 0px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    margin: 16px auto;
+    top: 16px;
+}
+
+.book-content{
+    /* margin: 16px auto;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.book-preview{
+    width: 200px;
+    height: 322px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 13px;
+}
+
+.book-rait{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 157px;
+    padding: 0px;
+    position: static;
+    margin: 17px auto;
+    padding-left: 10px;
+
+}
+
+.icon-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 20px;
+    position: static;
+}
+
+.icon-text p{
+    margin: 5px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 500;
+    color: #DA5DBF;
+}
+
+.bt-secondary{
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 500;
+    color: #562EE5;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 58px;
+    width: 84px;
+    background: #E6E0FB;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 300ms linear;
+}
+
+.bt-secondary:hover{
+    color: #fff;
+    background: #562EE5;
+
 
 
 }
+
+
+/*.book-icons-star{
+    width: 25px;
+    height: 17px;
+    margin-top:16px;
+    top:18px;
+    margin: 10px;
+    right:29px;
+    position: absolute;
+}*/
+
