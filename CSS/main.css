@@ -1,37 +1,78 @@
-body { /* Установка основного и запасных шрифтов*/
+body{ /* Установка основного и запасных шрифтов*/
     font-weight: normal;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    max-width: 1920px;
+    min-width: 1440px;
 }
 
-.header-nav{
+header{
     background-color: #fff;
     height: 76px;
     width: 100%;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    align-items: center;
+    align-items: center; 
 }
 
-.link-nav ul, li, a {
-    color: #C0C0C9;
-    height: inherit;
+.wrapper{
+    max-width: 1220px;
+    padding-left: 430px;
+    padding-right: 270px;
+}
 
-    text-decoration: none;
+.head-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width:100px;
+    height:40px;
+    display: inline-flex;
+    margin-top: 16px;
+
+}
+
+.nav{
+    align-items: center;
     list-style: none;
+    display:inline-flex;
 
+}
+
+.nav li > a{   
+    color: #C0C0C9;
+    text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    
-
-    display:inline-flex;
-}
-
-
-.link-nav a
-{
     padding-inline: 50px;
 }
 
-
-.link-nav-select, .link-nav li :hover {
+.nav li > a:hover, #accent{
     color: #562EE5;
+    transition: 30px; /*чтобы удобнее было попадать в блок*/
+}
+
+input[type="field"]{
+    width: 420px;
+    height: 58px;
+    display: inline-flex;
+    margin-left:45px;
+    margin: 9px;
+
+    background: #F1F1FB;
+    border-radius: 15px;
+    border: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 58px 10px 28px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4C4C4C;
+    color: #130130;
+
+
 }
