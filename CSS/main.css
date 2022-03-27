@@ -1,0 +1,37 @@
+body { /* Установка основного и запасных шрифтов*/
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+}
+
+.header-nav{
+    background-color: #fff;
+    height: 76px;
+    width: 100%;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.link-nav ul, li, a {
+    color: #C0C0C9;
+    height: inherit;
+
+    text-decoration: none;
+    list-style: none;
+
+    font-weight: 500;
+    font-size: 18px;
+    
+
+    display:inline-flex;
+}
+
+
+.link-nav a
+{
+    padding-inline: 50px;
+}
+
+
+.link-nav-select, .link-nav li :hover {
+    color: #562EE5;
+}
