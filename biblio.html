@@ -1,0 +1,454 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>qBook Главная</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./JS/header-pin.js"></script> <!-- для закреплённой шапки -->
+        <script src="./JS/tabs.js"></script> <!-- для вкладок -->
+        <link rel="stylesheet" href="./CSS/main.css">
+    </head>
+
+    <body>
+        <header> <!-- Шапка -->
+            <div class="wrapper">
+                <nav class="head-nav">
+                    <div class="logo"><!-- Логотип -->
+                        <a href ="#"><img src="./assets/IMG/Logo.svg" alt="qBook"></a>
+                    </div>
+                    <ul class="nav"> <!-- Навигация по станицам -->
+                        <li><a href="#">Главная</a></li>
+                        <li><a href ="#" id="accent" >Библиотека</a></li>
+                        <li><a href ="#">Донаты</a></li>
+                    </ul><!-- Поле ввода -->
+                    <label> <input type="field" placeholder="Поиск" required> </input> </label>
+                </nav>
+            </div> 
+        </header>
+
+        <main> <!-- Основной контейнер -->
+        <nav class="tabs">
+            <button class="tablinks" onclick="openTabs(event, 'Fantastic')">Бизнес</button>
+            <button class="tablinks" onclick="openTabs(event, 'Fantastic')">Фантастика</button>
+            <button class="tablinks" onclick="openTabs(event, 'Fantastic')">Фэнтези</button>
+            <button class="tablinks" onclick="openTabs(event, 'Fantastic')">Детективы</button>
+            <button class="tablinks" onclick="openTabs(event, 'Fantastic')">Другие</button>
+            <button class="tablinks" onclick="openTabs(event, 'Article')">Статьи</button>
+        </nav>
+         <section class="block-type1"> <!-- Блок 1 -->
+            <section class="daily-selections" id="Fantastic">
+                <span class="name-selections">
+                    <h1>Лидеры жанра</h1>
+                </span>
+                <section class="books-selections">
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>8.9</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>89%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section>
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+                </section>
+            </section>
+            
+         </section>
+
+         <section class="block-type1"> <!-- Блок 2 -->
+            <section class="daily-selections" id="Fantastic">
+                <span class="name-selections">
+                    <h1>Лидеры жанра</h1>
+                </span>
+                <section class="books-selections">
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>8.9</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>89%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section>
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+                </section>
+                <section class="books-selections">
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>8.9</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>89%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section>
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+
+                    <section class="book-card">
+                        <div class="card-content">
+                            <div class="book-content">
+                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                <a class="bt-secondary" href ="#">Читать</a>
+                            </div>
+                            <span class="book-rait">
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                    <p>6.7</p>
+                                </span>
+                                <span class="icon-text">
+                                    <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                    <p>69%</p>
+                                </span>
+                            </span>
+                        </div>
+                    </section> 
+                </section>
+            </section>
+         </section>
+
+        </main>
+
+        <footer> <!-- Футер -->
+            <div>
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><p>+7 294 384 13 14</p></li>
+                        <li><p>contactus@qBook.com</p></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><p>+7 294 384 13 14</p></li>
+                        <li><p>contactus@qBook.com</p></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><p>+7 294 384 13 14</p></li>
+                        <li><p>contactus@qBook.com</p></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><p>+7 294 384 13 14</p></li>
+                        <li><p>contactus@qBook.com</p></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><p>+7 294 384 13 14</p></li>
+                        <li><p>contactus@qBook.com</p></li>
+                    </ul>
+                </div>
+
+                </div>
+
+                
+            </div>
+            <p>© 2021–2022 qBook. Все права защищены. qBook, логотип являтся товарным знаками qBook,<br>
+                зарегистрированными в Росии и других странах. Все книги публикуются согласно лицензии,<br>
+                не нарушая авторское право, по индивидуальным договорам с каждым автором. <br>
+                Все пожертвования добровльны и не являются публичной офертой</p>
+        </footer>
+    </body>
+
+</html>

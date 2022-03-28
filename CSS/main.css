@@ -5,13 +5,13 @@ body{ /* Установка основного и запасных шрифто�
     margin: 0px;
     max-width: 1920px;
     min-width: 1600px;
+    background-color: #FFF;
 }
 
 main{
     min-width: 1440px;
     display: flex;
     align-items: center;
-    display: flex;
     flex-direction: column;
     padding: 0px;
 
@@ -138,7 +138,7 @@ input[type="field"]{
     color: #130130;
 }
 
-.block-1{
+.block-type0{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -148,13 +148,39 @@ input[type="field"]{
     position: relative;
 }
 
-.block-2{
+
+.block-type1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: auto;
+    margin-top: 40px;
+
+    position: relative;
+}
+
+.block-type2{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     margin: auto;
     margin-top: 40px;
+
+    position: relative;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: none;
+    margin-top: 96px;
 
     position: relative;
 }
@@ -171,7 +197,7 @@ input[type="field"]{
     margin: 12px;
 }
 
-.name-selections{
+.daily-selections > span{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +207,7 @@ input[type="field"]{
     position: static;
 }
 
-.name-selections h1{
+.daily-selections > span > h1{
     margin: 0px 12px;
 }
 
@@ -209,7 +235,7 @@ input[type="field"]{
     margin-top: 0px;
 }
 
-.card-content{
+.book-card > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +245,7 @@ input[type="field"]{
     top: 16px;
 }
 
-.book-content{
+.book-card > div > div{
     /* margin: 16px auto;
     justify-content: center; */
     display: flex;
@@ -231,7 +257,7 @@ input[type="field"]{
     top: 0px;
 }
 
-.book-preview{
+.book-card > div > div > img{
     width: 200px;
     height: 322px;
     border-radius: 25px;
@@ -345,7 +371,7 @@ input[type="field"]{
     position: relative;
 }
 
-.title-card > h1{
+.title-card > h1, .title-card > img{
     margin-left: 39px;
 }
 
@@ -353,6 +379,80 @@ input[type="field"]{
     margin-left: 24px;
 }
 
+.title-card > div{
+    margin-left: 78px;
+}
+
+.title-card > a{
+    margin-top: 17px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 252px;
+    background: #F1F1FB;
+    margin-top: 96px;
+
+    position: absolute;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 1408px;
+
+    position: static;
+}
+
+footer > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-right: 116px;
+    padding-bottom: 76px;
+
+    position: static;
+
+}
+
+footer > div > div >ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+}
+
+footer > div > div > ul > li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer > div > div > ul > li >p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    color: #562EE5;
+    margin: 10px 0px;
+
+    position: static;
+}
+
+footer > p{
+    margin-bottom: 84px;
+    padding: 0px;
+}
+
+footer > p{
+    color: #C0C0C9;
+    position: static;
+}
 .bt-secondary{
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-size: 18px;  
@@ -372,12 +472,52 @@ input[type="field"]{
     transition: background-color 300ms linear;
 }
 
-.bt-secondary:hover{
+.bt-secondary-stroke{
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 500;
+    color: #562EE5;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 58px;
+    width: 84px;
+
+    border-radius: 15px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:#562EE5;
+    transition: background-color 300ms linear;
+}
+
+.bt-secondary:hover, .bt-secondary-stroke:hover{
     color: #fff;
     background: #562EE5;
+}
 
+.tablinks{
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 500;
+    color: #562EE5;
+    text-decoration: none;
+    margin: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 58px;
+    width: 188px;
+    background: #E6E0FB;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 300ms linear;
 }
 
 
