@@ -2,6 +2,8 @@
     <head>
         <meta charset = "UTF-8">
         <title>qBook Главная</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./JS/header-pin.js"></script> <!-- для закреплённой шапки -->
         <link rel="stylesheet" href="./CSS/main.css">
     </head>
 
@@ -23,64 +25,165 @@
         </header>
 
         <main> <!-- Основной контейнер -->
-            <section class="daily-selections">
-                <span class="name-selections">
-                    <h4>Подборка дня</h4>
-                    <h1>Стив Жобс</h1>
-                </span>
-                <div class="books-selections">
-                    <section class="book-card">
-                        <div class="card-content">
-                            <div class="book-content">
-                                <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
-                                <a class="bt-secondary" href ="#">Читать</a>
+            <section class="block-1">
+                <section class="daily-selections">
+                    <span class="name-selections">
+                        <h3>Подборка дня</h3>
+                        <h1>Стив Жобс</h1>
+                    </span>
+                    <section class="books-selections">
+                        <section class="book-card">
+                            <div class="card-content">
+                                <div class="book-content">
+                                    <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
+                                    <a class="bt-secondary" href ="#">Читать</a>
+                                </div>
+                                <span class="book-rait">
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                        <p>8.9</p>
+                                    </span>
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                        <p>89%</p>
+                                    </span>
+                                </span>
                             </div>
+                        </section>
+
+                        <section class="book-card">
+                            <div class="card-content">
+                                <div class="book-content">
+                                    <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
+                                    <a class="bt-secondary" href ="#">Читать</a>
+                                </div>
+                                <span class="book-rait">
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                        <p>6.7</p>
+                                    </span>
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                        <p>69%</p>
+                                    </span>
+                                </span>
+                            </div>
+                        </section> 
+                    </section>
+                </section>
+
+                <section class="article-selection">
+                    <section class="article-card">
+                        <span class="name-and-text">
+                            <h2>Книги по фильмам, всё плохо?</h2>
+                            <p>Разберёмся глубже в теме книг по фильмам, 
+                                узнаем всё ли так плохо в индустрии</p>
+                        </span>
+                        <div class="button-and-rait">
                             <span class="book-rait">
+                                <a class="bt-secondary" href ="#">Посмотреть</a>
                                 <span class="icon-text">
                                     <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
-                                    <p>8.9</p>
+                                    <p>5.9</p>
                                 </span>
                                 <span class="icon-text">
                                     <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
-                                    <p>89%</p>
+                                    <p>92%</p>
                                 </span>
-                            </span>
                         </div>
+
                     </section>
 
-                    <section class="book-card">
-                        <div class="card-content">
-                            <div class="book-content">
-                                <img class="book-preview" src="./assets/IMG/book2.png" alt="Обложка книги">
-                                <a class="bt-secondary" href ="#">Читать</a>
-                            </div>
+                    <section class="article-card">
+                        <span class="name-and-text">
+                            <h2>Зачем читать перед сном?</h2>
+                            <p>Чтение перед сном помогает уменьшить
+                                стресс, расслабиться и лучше спать</p>
+                        </span>
+                        <div class="button-and-rait">
                             <span class="book-rait">
+                                <a class="bt-secondary" href ="#">Посмотреть</a>
                                 <span class="icon-text">
                                     <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
-                                    <p>6.7</p>
+                                    <p>9.8</p>
                                 </span>
                                 <span class="icon-text">
                                     <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
-                                    <p>69%</p>
+                                    <p>94%</p>
                                 </span>
-                            </span>
                         </div>
-                </section> 
-                </div>
+
+                    </section>
+                </section>
+
+                <section class="daily-selections">
+                    <span class="name-selections">
+                        <h3>Подборка недели</h3>
+                        <h1>Лучшая фантастика</h1>
+                    </span>
+                    <section class="books-selections">
+                        <section class="book-card">
+                            <div class="card-content">
+                                <div class="book-content">
+                                    <img class="book-preview" src="./assets/IMG/book3.png" alt="Обложка книги">
+                                    <a class="bt-secondary" href ="#">Читать</a>
+                                </div>
+                                <span class="book-rait">
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                        <p>8.9</p>
+                                    </span>
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                        <p>89%</p>
+                                    </span>
+                                </span>
+                            </div>
+                        </section>
+
+                        <section class="book-card">
+                            <div class="card-content">
+                                <div class="book-content">
+                                    <img class="book-preview" src="./assets/IMG/book4.png" alt="Обложка книги">
+                                    <a class="bt-secondary" href ="#">Читать</a>
+                                </div>
+                                <span class="book-rait">
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                        <p>6.7</p>
+                                    </span>
+                                    <span class="icon-text">
+                                        <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                        <p>69%</p>
+                                    </span>
+                                </span>
+                            </div>
+                        </section> 
+                    </section>
+                </section>
+
                 
-                    
-                        
-                    <!-- <div class="book-rait">
-                        <div class="book-star">
-                            <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
-                            <p>8.9</p>
-                        </div>
-                        <div class="book-view">
-                            <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
-                            <p>69%</p>
-                        </div>
-                    </div> -->
-                
+            </section>
+
+            <section class="block-2">
+                <h1>Мы делаем это для вас</h1>
+                <section class="titls"> 
+                    <span class="title-card">
+                        <h1 class="title-h1">2500</h1>
+                        <h2>Кнги мы<br> публикуем<br> бесплатно</h2>
+                    </span>
+
+                    <span class="title-card">
+                        <h1 class="title-h1">100</h1>
+                        <h2>Кнги мы<br> добавляем<br> еженедельно</h2>
+                    </span>
+
+                    <span class="title-card">
+                        <h1 class="title-h1">30</h1>
+                        <h2>Статей мы<br> пишем<br> ежемесячно</h2>
+                    </span>
+                </section>
+         </section>
         </main>
 
         <footer> <!-- Футер -->

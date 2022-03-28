@@ -4,7 +4,18 @@ body{ /* Установка основного и запасных шрифто�
     padding: 0px;
     margin: 0px;
     max-width: 1920px;
+    min-width: 1600px;
+}
+
+main{
     min-width: 1440px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: relative;
 }
 
 h1{
@@ -13,6 +24,14 @@ h1{
     font-size: 36px;  
     font-weight: 700;
     color: #130130;
+}
+
+.title-h1{
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 64px;  
+    font-weight: 700;
+    color: #562EE5; 
 }
 
 h2{
@@ -24,15 +43,6 @@ h2{
 }
 
 h3{
-
-    font-weight: normal;
-    font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 18px;  
-    font-weight: 400;
-    color: #4C4C4C;;
-}
-
-h4{
     font-weight: normal;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-size: 18px;  
@@ -40,13 +50,31 @@ h4{
     color: #C0C0C9;;  
 }
 
+p{
+
+    font-weight: normal;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 18px;  
+    font-weight: 400;
+    line-height: 150%;
+    color: #4C4C4C;;
+}
+
 header{
     background-color: #fff;
     height: 76px;
     width: 100%;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    align-items: center; 
+    align-items: center;
+    position: relative;
+    z-index: 10000;
 }
+
+.header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
 
 .wrapper{
     max-width: 1220px;
@@ -56,20 +84,22 @@ header{
 
 .head-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
 
 .logo{
     width:100px;
     height:40px;
     display: inline-flex;
-    margin-top: 16px;
+    margin-top: 22px;
+    margin-right: 120px;
 }
 
 .nav{
     align-items: center;
     list-style: none;
     display:inline-flex;
+    
 
 }
 
@@ -79,11 +109,12 @@ header{
     font-weight: 500;
     font-size: 18px;
     padding-inline: 50px;
+    transition: color 100ms linear; /*анимация*/
 }
 
 .nav li > a:hover, #accent{
     color: #562EE5;
-    transition: 30px; /*чтобы удобнее было попадать в блок*/
+    
 }
 
 input[type="field"]{
@@ -107,11 +138,37 @@ input[type="field"]{
     color: #130130;
 }
 
+.block-1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: auto;
+
+    position: relative;
+}
+
+.block-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin: auto;
+    margin-top: 40px;
+
+    position: relative;
+}
+
 .daily-selections{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
+
     position: relative;
+
+    /* position: static; */
+    margin: 12px;
 }
 
 .name-selections{
@@ -135,7 +192,7 @@ input[type="field"]{
     padding: 0px;
 
     position: static;
-    margin: 22px;
+    margin-top: 22px;
 }
 
 .book-card{
@@ -187,6 +244,7 @@ input[type="field"]{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     height: 30px;
     width: 157px;
     padding: 0px;
@@ -194,6 +252,54 @@ input[type="field"]{
     margin: 17px auto;
     padding-left: 10px;
 
+}
+
+.article-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 456px;
+    height: 546px;
+    margin: 12px;
+    top: 40px;
+
+    position: relative;
+}
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 456px;
+    height: 261px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    border: none;
+    margin: 12px;
+    
+    position: relative;
+}
+
+.name-and-text{
+    width: 406px;
+    height: 97px;
+    margin: 25px 34px;
+}
+
+.button-and-rait{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 401px;
+    height: 58px;
+    margin: auto 24px;
+
+    position: static;
 }
 
 .icon-text{
@@ -212,6 +318,39 @@ input[type="field"]{
     font-size: 18px;  
     font-weight: 500;
     color: #DA5DBF;
+}
+
+.titls{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 0px
+}
+
+.title-card{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 0px;
+
+    
+    width: 456px;
+    height: 213px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin: auto 12px;
+
+    
+    position: relative;
+}
+
+.title-card > h1{
+    margin-left: 39px;
+}
+
+.title-card > h2{
+    margin-left: 24px;
 }
 
 .bt-secondary{
