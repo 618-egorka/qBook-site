@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>qBook Главная</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./JS/header-pin.js"></script> <!-- для закреплённой шапки -->
+        <script src="./JS/past-rait.js"></script> <!-- для иконок -->
+        <script src="https://kit.fontawesome.com/87cd508d30.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./CSS/main.css">
+    </head>
+
+    <body>
+        <header> <!-- Шапка -->
+            <div class="wrapper">
+                <nav class="head-nav">
+                    <div class="logo"><!-- Логотип -->
+                        <a href ="./main.html"><img src="./assets/IMG/Logo.svg" alt="qBook"></a>
+                    </div>
+                    <ul class="nav"> <!-- Навигация по станицам -->
+                        <li><a href="./main.html">Главная</a></li>
+                        <li><a href ="#" id="accent" >Библиотека</a></li>
+                        <li><a href ="./donate.html">Донаты</a></li>
+                    </ul><!-- Поле ввода -->
+                    <label> <input type="field" placeholder="Поиск" required> </input> </label>
+                </nav>
+            </div> 
+        </header>
+
+        <main><!-- Основной контейнер -->
+            <section class="book-page-info">
+                <section class="book-card">
+                    <div class="card-content">
+                        <div class="book-content">
+                            <img class="book-preview" src="./assets/IMG/book1.png" alt="Обложка книги">
+                            <a class="bt-secondary" href ="#">Читать</a>
+                            <a class="bt-primary" href ="#" style="margin-top: 14px">Скачать</a>
+                        </div>
+                        <span class="book-rait">
+                            <span class="icon-text">
+                                <img src="./assets/IMG/rait-icon.svg" alt="Рейтинг">
+                                <p>6.7</p>
+                            </span>
+                            <span class="icon-text">
+                                <img src="./assets/IMG/view-icon.svg" alt="Просмотры">
+                                <p>69%</p>
+                            </span>
+                        </span>
+                    </div>
+                </section><!--book-card-->
+
+                <div class="book-page">
+                    <span>
+                        <h1>Чему я могу научиться<br>
+                            у Стива Джобса</h1>
+                        <ul>
+                            <li><p>Фредерик Колтинг</p></li>
+                            <li><p>Медина Мелисса</p></li>
+                        </ul>  
+                    </span>
+                    <a class="tag">Бизнес</a>
+                    <p>Стив Джобс – мечтатель и культовая фигура бизнеса.<br>
+                    У него был особый взгляд на мир и нерушимые идеалы,<br>
+                    которые помогли ему добиться невероятного успеха.<br>
+                    В этой иллюстрированной биографии авторы показывают<br>
+                    новому поколению, что и им тоже под силу изменить мир,<br>
+                    как это сделал Джобс. Надо лишь довериться своей</p>
+                    <div class="block-rate">
+                        <h2>Оцените книгу</h2>
+                        <div class="rate">
+                            <input type="radio" id="star10" name="rate" value="10" />
+                            <label for="star5" title="text">10 stars</label>
+                            <input type="radio" id="star9" name="rate" value="9" />
+                            <label for="star4" title="text">9 stars</label>
+                            <input type="radio" id="star8" name="rate" value="8" />
+                            <label for="star3" title="text">8 stars</label>
+                            <input type="radio" id="star7" name="rate" value="7" />
+                            <label for="star2" title="text">7 stars</label>
+                            <input type="radio" id="star6" name="rate" value="6" />
+                            <label for="star1" title="text">6 star</label>
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer> <!-- Футер -->
+            <div>
+                <div>
+                    <h1>Контанты</h1>
+                    <ul>
+                        <li><a href="#">+7 294 384 13 14</a></li>
+                        <li><a href="#">contactus@qBook.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Поддержка</h1>
+                    <ul>
+                        <li><a href="#">t.me/support_qBook</a></li>
+                        <li><a href="#">support@qBook.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Соц-сети</h1>
+                    <ul>
+                        <li><a href="#">t.me/qBook</a></li>
+                        <li><a href="#">vk.com/qBook</a></li>
+                        <li><a href="#">youtube.com/qBook</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>Карта</h1>
+                    <ul>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="./main.html">Главная</a></li>
+                        <li><a href="./donate.html">Доанты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1>©Права</h1>
+                    <ul>
+                        <li><a href="#">qBook авторское право</a></li>
+                        <li><a href="#">qBook пожертвования</a></li>
+                        <li><a href="#">qBook авторы книг</a></li>
+                    </ul>
+                </div>
+
+                </div>
+
+                
+            </div>
+            <div class="footer-p">
+                <p>© 2021–2022 qBook. Все права защищены. qBook, логотип являтся товарным знаками qBook,
+                    зарегистрированными в Росии и других странах. Все книги публикуются согласно лицензии,
+                    не нарушая авторское право, по индивидуальным договорам с каждым автором.
+                    Все пожертвования добровльны и не являются публичной офертой</p>
+            </div>
+        </footer>
+        <script src="./JS/default-tab.js"></script><!-- дефолтно открытая вкладка -->
+    </body>
+
+</html>
